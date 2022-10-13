@@ -1,0 +1,23 @@
+{% extends 'home.html' %}
+
+{% block content %}
+    <header>
+    <div
+    class="p-5 text-center bg-image text-white"
+    style="
+      background-color: grey;
+      height: 100vh;
+    "
+  >
+<h1 style="color:black;">Wszystkie naprawy</h1>
+    {% for naprawa in naprawy %}
+        <p></p>
+    <tr>
+						<td><a class="btn btn-sm btn-success" href="naprawa_edit/{{naprawa.id}}" >Edit</a></td>
+						<td>{{naprawa}}</td>
+            <td><a class="btn btn-sm btn-danger" href="naprawa_delete/{{naprawa.id}}" >Delete</a></td>
+					</tr>
+    {% endfor %}
+    </div>
+    </header>
+{% endblock %}

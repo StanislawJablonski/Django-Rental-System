@@ -1,0 +1,10 @@
+li a {
+    color: black;
+    font-size: large;
+    font-family: "Arial Black";
+
+}
+body {
+    background: black url("images/bck.png") repeat-x;
+}
+

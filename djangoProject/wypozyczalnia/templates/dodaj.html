@@ -1,0 +1,25 @@
+{% extends 'home.html' %}
+
+{% block content %}
+    <header>
+    <div
+    class="p-5 text-center bg-image text-white"
+    style="
+      background-color: grey;
+      height: 100vh;
+    "
+  >
+<h1 style="color:black;">Wszystkie adresy</h1>
+        <div class="list-group">
+            <a class="list-group-item list-group-item-action" href="/wypozyczalnia/addadres">Dodaj adres</a>
+            <a class="list-group-item list-group-item-action" href="/wypozyczalnia/addklient">Dodaj klienta</a>
+            <a class="list-group-item list-group-item-action" href="/wypozyczalnia/addpracownik">Dodaj pracownika</a>
+            <a class="list-group-item list-group-item-action" href="/wypozyczalnia/addwypozyczalnia">Dodaj wypożyczalnie</a>
+            <a class="list-group-item list-group-item-action" href="/wypozyczalnia/addsprzet">Dodaj sprzęt</a>
+            <a class="list-group-item list-group-item-action" href="/wypozyczalnia/addnaprawa">Dodaj naprawę</a>
+            <a class="list-group-item list-group-item-action" href="/wypozyczalnia/addpromocja">Dodaj promocję</a>
+            <a class="list-group-item list-group-item-action" href="/wypozyczalnia/addwypozyczenie">Dodaj wypożyczenie</a>
+            </div>
+    </div>
+    </header>
+{% endblock %}

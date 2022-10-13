@@ -1,0 +1,23 @@
+{% extends 'home.html' %}
+
+{% block content %}
+    <header>
+    <div
+    class="p-5 text-center bg-image text-white"
+    style="
+      background-color: grey;
+      height: 100vh;
+    "
+  >
+<h1 style="color:black;">Caly sprzęt</h1>
+    {% for sprzet in sprzety %}
+        <p></p>
+    <tr>
+						<td><a class="btn btn-sm btn-success" href="sprzet_edit/{{sprzet.id}}" >Edit</a></td>
+						<td>{{sprzet}}</td>
+            <td><a class="btn btn-sm btn-danger" href="sprzet_delete/{{sprzet.id}}" >Delete</a></td>
+					</tr>
+    {% endfor %}
+    </div>
+    </header>
+{% endblock %}

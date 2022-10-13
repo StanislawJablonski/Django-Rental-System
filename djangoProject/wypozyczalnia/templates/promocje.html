@@ -1,0 +1,23 @@
+{% extends 'home.html' %}
+
+{% block content %}
+    <header>
+    <div
+    class="p-5 text-center bg-image text-white"
+    style="
+      background-color: grey;
+      height: 100vh;
+    "
+  >
+<h1 style="color:black;">Wszystkie promocje</h1>
+    {% for promocja in promocje %}
+        <p></p>
+    <tr>
+						<td><a class="btn btn-sm btn-success" href="promocja_edit/{{promocja.id}}" >Edit</a></td>
+						<td>{{promocja}}</td>
+            <td><a class="btn btn-sm btn-danger" href="promocja_delete/{{promocja.id}}" >Delete</a></td>
+					</tr>
+    {% endfor %}
+    </div>
+    </header>
+{% endblock %}

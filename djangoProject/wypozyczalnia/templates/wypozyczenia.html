@@ -1,0 +1,23 @@
+{% extends 'home.html' %}
+
+{% block content %}
+    <header>
+    <div
+    class="p-5 text-center bg-image text-white"
+    style="
+      background-color: grey;
+      height: 100vh;
+    "
+  >
+<h1 style="color:black;">Wszystkie wypożyczenia</h1>
+    {% for wypozyczenie in wypozyczenia %}
+        <p></p>
+    <tr>
+						<td><a class="btn btn-sm btn-success" href="wypozyczenie_edit/{{wypozyczenie.id}}" >Edit</a></td>
+						<td>{{wypozyczenie}}</td>
+            <td><a class="btn btn-sm btn-danger" href="wypozyczenie_delete/{{wypozyczenie.id}}" >Delete</a></td>
+					</tr>
+    {% endfor %}
+    </div>
+    </header>
+{% endblock %}
